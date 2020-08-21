@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    color: hsl(273, 71%, 19%);
+    animation: wheelHueColor 10s infinite;
+    background-color: currentColor;
+}
+  @supports (background-blend-mode: overlay) {
+    body {
+      background-image: linear-gradient(45deg, white 10%, black 90%);
+      background-blend-mode: overlay;
+    }
+  }
+  @keyframes wheelHueColor {
+    from, to { color: hsl(253, 41%, 55%); }
+    20%      { color: hsl(337, 39%, 43%) }
+    40%      { color: hsl(231, 70%, 45%); }
+    60%      { color: hsl(252, 65%, 50%); }
+    80%      { color: hsl(288, 60%, 40%); }
+  }
+
+  /* Header */
+header a,
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header a:hover {
+    color: hsl(250, 90%, 4%);
+    animation: wheelHueColor 10s infinite;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+
+/* Main */
+.background {
+    padding: 1rem 0;
+}
+
+form {
+    margin: auto;
+    max-width: 50rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3rem;
+}
+
+fieldset {
+    border: none;
+}
+
+img {
+    max-width: 60%;
+    margin: auto;
+}
+
+h1,
+header p {
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+
+/* Questions et réponses */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    max-width: 40rem;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+
+ul li input:checked + label{
+    background-color: #d74a4f;
+    color: #fff;
+}
+
+label {
+    background-color: #fff;
+    border-radius: .5rem;
+    font-size: 1rem;
+    padding: 3rem 0;
+    display: block;
+    font-weight: 300;
+    z-index: 9;
+    cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+label:hover {
+    background-color: #00BFA6;
+    color: #fff;
+    box-shadow: 10px 20px 10px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Bouton de validation */
+.button,
+button {
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    background-color: #00BFA6;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.2rem;
+   
+    color: #fff;
+    cursor: pointer; 
+
+    box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.button:hover,
+button:hover {
+    background-color: rgb(20, 78, 202);
+    color: #fff;
+    box-shadow: .5rem .5rem 1rem rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Page de résultat */
+#result img {
+    max-width: 30%;
+    padding-top: 2rem;
+}
+
+#result-title,
+#result-text {
+    font-weight: bold;
+    color: #fff;
+    max-width: 40rem;
+    margin: auto;
+    padding-bottom: 1rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Footer */
+footer p,
+footer a {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.linkedin:hover {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    color: #112233;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+/* Animation SVG */
+

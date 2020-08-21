@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quizz : Saurez- vous deviner le métier du web fait pour vous ?</title>
+</head>
+<body>
+    <header>
+        <p><a href="index.html">Quizz : Saurez- vous deviner le métier du web fait pour vous ?</a></p>
+    </header>
+
+    <main class="background">
+        <form method="GET">
+            <fieldset>
+                <div class="hero">
+                   <img src="images/banner.png" alt="Image d'un personnage vert eau en cartoon avec un oeil qui se pose des questions devant des écrans d'ordinateur">
+                    <h1 id="question-text" class="card-header">La question</h1>
+                </div>
+
+                <ul class="wrapper">
+                    <li> 
+                        <input type="radio" id="rep1" name="reponse" value="" tabindex="0" aria-hidden="true" autofocus/>
+                        <label for="rep1">La réponse 1</label></li>
+                    <li> 
+                        <input type="radio" id="rep2" name="reponse" value="" tabindex="-1" aria-hidden="true"/>
+                        <label for="rep2">La réponse 2</label></li>
+                    <li>
+                        <input type="radio" id="rep3" name="reponse" value="" tabindex="-1" aria-hidden="true"/>
+                        <label for="rep3">La réponse 3</label></li>
+                    <li>
+                        <input type="radio" id="rep4" name="reponse" value="" tabindex="-1" aria-hidden="true"/>
+                        <label for="rep4">La réponse 4</label></li>
+                </ul>
+
+                <input type="submit" class="button" aria-label="Validez votre réponse"/>
+            </fieldset>
+        </form>
+
+        <div class="hidden" id="result">
+            <h2 id="result-title">Félicitations tu es...</h2>
+            <img src="" alt="Bannière" id="banner"/>
+            <p id="result-text"></p>
+
+            <button><a href="index.html"> Recommencez le quizz</a></button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy Copyright <a href="https://www.linkedin.com/in/virginiepateyron/" target="_blank" class="linkedin">Virginie Pateyron</a></p>
+    </footer>
+
+
+<script src="data.js"></script>
+<script src="functions.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
