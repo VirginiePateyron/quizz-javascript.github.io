@@ -1,1 +1,1 @@
-# quizz-javascript
+# Quizz JavaScript
